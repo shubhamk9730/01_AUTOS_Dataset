@@ -1,0 +1,49 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> CAR PRICE CALCULATOR </h1><br>
+        
+        <form method="POST", action="{{url_for('get_car_price')}}">
+           <b> symboling :  <input type="text", name='symboling', placeholder="numbers"> <br><br>
+            normalized_losses :  <input type="text", name='normalized_losses', placeholder="numbers"> <br><br>
+            fuel_type :  <input type="text", name='fuel_type', placeholder="gas/iesel"> <br><br>
+            aspiration : <input type="text", name='aspiration', placeholder="std/turbo"> <br><br>
+            num_of_doors :  <input type="text", name='num_of_doors', placeholder="two/four"> <br><br>
+            engine_location :  <input type="text", name='engine_location', placeholder="front/rear"> <br><br>
+            wheel_base :  <input type="text", name='wheel_base', placeholder="number in cms"> <br><br>
+            length :  <input type="text", name='length', placeholder="numbers in cms"> <br><br>
+            width :  <input type="text", name='width', placeholder="numbers in cms"> <br><br>
+            height :  <input type="text", name='height', placeholder="numbers in cms"> <br><br>
+            curb_weight :  <input type="text", name='curb_weight', placeholder="numbers in kg"> <br><br>
+            num_of_cylinders :  <input type="text", name='num_of_cylinders', placeholder="two/three/four/five/six/eight/twelve"> <br><br>
+            engine_size :  <input type="text", name='engine_size', placeholder="numbers"> <br><br>
+            bore :  <input type="text", name='bore', placeholder="numbers"> <br><br>
+            stroke :  <input type="text", name='stroke', placeholder="numbers"> <br><br>
+            compression_ratio :  <input type="text", name='compression_ratio', placeholder="numbers"> <br><br>
+            horsepower :  <input type="text", name='horsepower', placeholder="numbers"> <br><br>
+            peak_rpm :  <input type="text", name='peak_rpm', placeholder="numbers in HP"> <br><br>
+            city_mpg value :  <input type="text", name='city_mpg', placeholder="numbers in mpg"> <br><br>
+            highway_mpg :  <input type="text", name='highway_mpg', placeholder="numbers in mpg"> <br><br>
+            make :  <input type="text", name='make', placeholder="yota/nissan/mazda/mitsubishi/honda/volkswagen/subaru/peugot/volvo/dodge/mercedes-benz/bmw/audi/plymouth/saab/porsche/isuzu/jaguar/chevrolet/alfa-romero/renault/mercury"> <br><br>
+            body_style :  <input type="text", name='body_style', placeholder="sedan/hatchback/wagon/hardtop/convertible"> <br><br>
+            drive_wheels :  <input type="text", name='drive_wheels', placeholder="fwd/rwd/4wd"> <br><br>
+            engine_type :  <input type="text", name='engine_type', placeholder="ohc/ohcf/ohcv/dohc/l/rotor/dohcv"> <br><br>
+            fuel_system :  <input type="text", name='fuel_system', placeholder="mpfi/2bbl/idi/1bbl/spdi/4bbl/mfi/spfi"> <br><br><br></b>
+            <input type="submit" , value='predict car price' >
+            
+        </form>
+
+
+
+        <br><br><h3>{{ price }}<h3>
+    </div>
+    
+
+        <img src='static\car2.jpg' alt="car">
+        
+    </center>
+
+    </body>
+</html>
